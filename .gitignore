@@ -1,0 +1,6 @@
+linkedin-bot-env/
+*.log
+.DS_Store
+__pycache__/
+.claude/
+memory/
