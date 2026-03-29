@@ -4,3 +4,4 @@ linkedin-bot-env/
 __pycache__/
 .claude/
 memory/
+CLAUDE.md
