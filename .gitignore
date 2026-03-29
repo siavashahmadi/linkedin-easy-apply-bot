@@ -5,3 +5,4 @@ __pycache__/
 .claude/
 memory/
 CLAUDE.md
+config.json
