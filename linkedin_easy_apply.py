@@ -31,12 +31,12 @@ from selenium.common.exceptions import (
 
 # ─── CONFIG ───────────────────────────────────────────────────────────
 CONFIG = {
-    "search_keywords": '(frontend OR fullstack OR "full stack" OR "web developer" OR devops OR "cloud engineer" OR "platform engineer") AND (react OR node OR python OR AWS OR angular OR typescript)',
-    "location": "New York City",
+    "search_keywords": 'software engineer developer react',
+    "location": "",
     "experience_levels": "2,3,4",  # 2=Entry, 3=Associate, 4=Mid-Senior
     "job_type": "F",               # F=Full-time
     "work_type": "",               # 1=On-site, 2=Remote, 3=Hybrid (empty=all)
-    "time_posted": "r86400",       # r86400=24h, r604800=week, r2592000=month
+    "time_posted": "r604800",      # r86400=24h, r604800=week, r2592000=month
     "max_applications": 50,        # LinkedIn daily Easy Apply limit is ~50
     "min_delay": 2,
     "max_delay": 5,
@@ -239,7 +239,7 @@ def click_easy_apply(driver):
     if result:
         log.info("  Clicked Easy Apply button")
         # Wait for the modal to fully load
-        for _ in range(10):
+        for _ in range(20):
             time.sleep(0.5)
             modal_ready = driver.execute_script("""
                 var modal = document.querySelector('.artdeco-modal');

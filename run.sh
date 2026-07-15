@@ -2,7 +2,8 @@
 # Launch Chrome with remote debugging and run the LinkedIn Easy Apply bot
 
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
-  --remote-debugging-port=9222 &
+  --remote-debugging-port=9222 \
+  --user-data-dir="$HOME/.chrome-debug-profile" &
 
 CHROME_PID=$!
 echo "Chrome starting (PID $CHROME_PID)..."
